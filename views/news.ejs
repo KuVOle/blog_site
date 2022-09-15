@@ -1,0 +1,20 @@
+<%- include('./partials/head') %>
+
+    <div class="container">
+        <h2>
+            <%= Item.title %>
+        </h2>
+        <div class="py-2">
+            <%= Item.text %>
+        </div>
+        <% if(Item.picture){ %>
+            <div class="py-2" style="display: flex; justify-content:center">
+                <img src="../img/<%=Item.picture %>" alt="" width="300">
+            </div>
+            <%}%>
+                <hr>
+                <a href="/">Go home</a>
+    </div>
+    </body>
+
+    </html>

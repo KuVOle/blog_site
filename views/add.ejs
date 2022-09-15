@@ -1,0 +1,31 @@
+<%- include('./partials/head.ejs') %>
+
+    <div class="container">
+        <h1>Add news</h1>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="py-2">
+                <label class="form-label">Titel:</label>
+                <input type="text" class="form-control" name="title" style="max-width: 500px;">
+            </div>
+
+            <div class="py-2">
+                <label class="form-label">Text:</label>
+                <textarea name="text" class="form-control" style="max-width: 500px;"></textarea>
+            </div>
+            <div class="py-2">
+                <input type="file" name="picture">
+            </div>
+
+            <div class="py-2">
+                <button class="btn btn-success">Add news</button>
+            </div>
+
+        </form>
+    </div>
+
+
+
+    </body>
+
+    </html>
